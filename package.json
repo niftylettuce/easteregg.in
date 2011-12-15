@@ -19,7 +19,6 @@
       , "underscore"       : ">= 1.1.7"
       , "gzippo"           : ">= 0.1.0"
       , "walk"             : ">= 2.0.2"
-      , "express-uglify"   : "https://github.com/niftylettuce/express-uglify/tarball/master"
     }
   , "main": "./server.js"
   , "engines": { "node": ">= 0.6.3" }

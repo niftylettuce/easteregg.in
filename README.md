@@ -10,10 +10,10 @@
 
 ## Credit where credit is due
 
- Thanks to @substack, @paulirish, @chapel, @elliottkember, @zurb, @erkie
+ Thanks to @substack, @paulirish, @chapel, @elliottkember, @zurb, @erkie,
  [Phil Coffman](http://twitter.com/philcoffman),
- [Noah Stokes](http://twitter.com/motherfuton)
- [Gunnar Hoffman](http://gunnarhoffman.com/)
+ [Noah Stokes](http://twitter.com/motherfuton),
+ [Gunnar Hoffman](http://gunnarhoffman.com/),
  [Steel & Sunshine](http://listn.to/SteelSunshine/player)
  , and more eggin' folks out there!
 
