@@ -44,7 +44,7 @@ document.getElementsByTagName("head")[0].appendChild($getMinScript);
 function easterEggSnowy() {
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/snowy/snow.min.js", {
     onSuccess: function() {
-      var $snowyStyle = document.createElement("style")
+      var $snowyStyle = document.createElement("link")
         , $snowFlurry = document.createElement('div')
         , $head = document.getElementsByTagName('head')[0]
         , $body = document.getElementsByTagName('body')[0];
@@ -54,6 +54,8 @@ function easterEggSnowy() {
       $snowyStyle.media = 'screen';
       $snowFlurry.id = 'snow_flurry';
       $snowFlurry.innerHTML = '<tt>snow flurry. &lt;3</tt>';
+      // Set background color to give more contrast to the pretty snowflakes
+      $body.style.backgroundColor = '#fdd204';
       // Add the stylesheet to the &lt;head&gt; element
       $head.appendChild($snowyStyle);
       // Prepend the &lt;canvas&gt; snowflakes to the &lt;body&gt; element
