@@ -49,14 +49,15 @@ function easterEggSnowy() {
         , $head = document.getElementsByTagName('head')[0]
         , $body = document.getElementsByTagName('body')[0];
       $snowyStyle.rel = 'stylesheet';
-      $snowyStyle.href = 'http://cdn.easteregg.in/outcomes/snowy/snowy.css';
+      $snowyStyle.href = 'http://cdn.easteregg.in/outcomes/snowy/ddg-snowy.css';
       $snowyStyle.type = 'text/css';
       $snowyStyle.media = 'screen';
       $snowFlurry.id = 'snow_flurry';
+      $snowFlurry.innerHTML = '<tt>snow flurry. &lt;3</tt>';
       // Add the stylesheet to the &lt;head&gt; element
       $head.appendChild($snowyStyle);
       // Prepend the &lt;canvas&gt; snowflakes to the &lt;body&gt; element
-      $body.insertBefore($snowFlurry, $body);
+      $body.insertBefore($snowFlurry, $body.firstChild);
     }
   });
 }
