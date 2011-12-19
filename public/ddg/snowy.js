@@ -1,7 +1,4 @@
 function easterEggSnowy() {
-  $getMinScript = document.createElement("script");
-  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
-  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/snowy/snow.min.js", {
     onSuccess: function() {
       var $snowyStyle = document.createElement("style")
@@ -20,4 +17,15 @@ function easterEggSnowy() {
     }
   });
 }
-YAHOO.util.Event.onDOMReady(easterEggSnowy);
+var $getMinScript = document.createElement("script");
+$getMinScript.type = 'text/javascript';
+if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'complete') {
+  $getMinScript.onreadystatechange = null;
+  YAHOO.util.Event.onDOMReady(easterEggSnowy);
+} else {
+  $getMinScript.onload = function() {
+    YAHOO.util.Event.onDOMReady(easterEggSnowy);
+  };
+}
+$getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+document.getElementsByTagName("head")[0].appendChild($getMinScript);
