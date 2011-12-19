@@ -8,7 +8,7 @@
 // **NOTE**: There are 3 ways we can include the `get-min.js`
 
 // * include the script after YUI with a generic &lt;script&gt; tag
-// * use [YUILoader][2] w/callback as in `YAHOO.util.YUILoader` to load `['get']` module
+// * use [YUILoader][1] w/callback as in `YAHOO.util.YUILoader` to load `['get']` module
 // * append &lt;script&gt; to &lt;body&gt;, after DOM is ready **(currently used)**
 // [1]: http://developer.yahoo.com/yui/yuiloader/
 
