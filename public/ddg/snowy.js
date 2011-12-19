@@ -1,4 +1,7 @@
 function easterEggSnowy() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/snowy/snow.min.js", {
     onSuccess: function() {
       var $snowyStyle = document.createElement("style")
@@ -10,9 +13,9 @@ function easterEggSnowy() {
       $snowyStyle.type = 'text/css';
       $snowyStyle.media = 'screen';
       $snowFlurry.id = 'snow_flurry';
-      // Add the stylesheet to the <head> section
+      // Add the stylesheet to the &lt;head&gt; element
       $head.appendChild($snowyStyle);
-      // Prepend the <canvas> snowflakes to <body>
+      // Prepend the &lt;canvas&gt; snowflakes to the &lt;body&gt; element
       $body.insertBefore($snowFlurry, $body);
     }
   });

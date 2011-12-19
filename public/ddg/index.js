@@ -5,12 +5,22 @@
 // JSHint Global Variables
 /*globals YAHOO load_protest cornify_add Snake*/
 
+// **NOTE**: There are 3 ways we can include the `get-min.js`
+
+// * include the script after YUI with a generic &lt;script&gt; tag
+// * use [YUILoader][2] w/callback as in `YAHOO.util.YUILoader` to load `['get']` module
+// * append &lt;script&gt; to &lt;body&gt;, after DOM is ready **(currently used)**
+// [1]: http://developer.yahoo.com/yui/yuiloader/
+
 // &ast; = requires jQuery
 
 // ## Cornify
-// If query = "cornify", then embed this &lt;script&gt; after YUI has loaded:
+// If query = "cornify", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/cornify.js" defer></script>`
 function easterEggCornify() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/cornify/cornify.js", {
     onSuccess: function() {
       cornify_add();
@@ -21,9 +31,12 @@ YAHOO.util.Event.onDOMReady(easterEggCornify);
 
 
 // ## Snowy
-// If query = "snowy", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "snowy", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/snowy.js" defer></script>`
 function easterEggSnowy() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/snowy/snow.min.js", {
     onSuccess: function() {
       var $snowyStyle = document.createElement("style")
@@ -46,9 +59,12 @@ YAHOO.util.Event.onDOMReady(easterEggSnowy);
 
 
 // ## Invert Colors*
-// If query = "invert colors", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "invert colors", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/invert-colors.js" defer></script>`
 function easterEggInvertColors() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
     onSuccess: function() {
       $(function($){
@@ -64,9 +80,12 @@ YAHOO.util.Event.onDOMReady(easterEggInvertColors);
 
 
 // ## Raptorize*
-// If query = "raptorize", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "raptorize", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/raptorize.js" defer></script>`
 function easterEggRaptorize() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
     onSuccess: function() {
       $(function($){
@@ -83,9 +102,12 @@ YAHOO.util.Event.onDOMReady(easterEggRaptorize);
 
 
 // ## Kathack*
-// If query = "kathack", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "kathack", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/kathack.js" defer></script>`
 function kathack() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
     onSuccess: function() {
       $(function($){
@@ -99,9 +121,12 @@ YAHOO.util.Event.onDOMReady(kathack);
 
 
 // ## Secret Message
-// If query = "gabriel weinburg", then embed this &lt;script&gt; after YUI has loaded:
+// If query = "gabriel weinburg", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/secret-message.js" defer></script>`
 function easterEggSecretMessage() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/animation/animation-min.js", {
     onSuccess: function() {
       Secret.fnMessage("yegg was here");
@@ -112,18 +137,24 @@ YAHOO.util.Event.onDOMReady(easterEggSecretMessage);
 
 
 // ## Asteroids
-// If query = "asteroids", then embed this &lt;script&gt; after YUI has loaded:
+// If query = "asteroids", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/asteroids.js" defer></script>`
 function easterEggAsteroids() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/asteroids/asteroids.min.js");
 }
 YAHOO.util.Event.onDOMReady(easterEggAsteroids);
 
 
 // ## Snake*
-// If query = "snake", then embed this &lt;script&gt; after YUI has loaded:
+// If query = "snake", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/snake.js" defer></script>`
 function easterEggSnake() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
     onSuccess: function() {
       $(function($){
@@ -131,7 +162,7 @@ function easterEggSnake() {
           var snake = { width: 20, timeout: 100 }
             , snakes = [];
           // **TODO:** This can be **[customized][1]** into a complex snake game
-          // [1]: http://elliottkember.com/snake.html
+          // [2]: http://elliottkember.com/snake.html
           snakes.push(new Snake({
             width: snake.width,
             timeout: snake.timeout
@@ -146,9 +177,12 @@ YAHOO.util.Event.onDOMReady(easterEggSnake);
 
 
 // ## Nifty*
-// If query = "niftylettuce", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "niftylettuce", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/nifty.js" defer></script>`
 function easterEggNifty() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
     onSuccess: function() {
       $(function($){
@@ -164,18 +198,24 @@ YAHOO.util.Event.onDOMReady(easterEggNifty);
 
 
 // ## Unicorn Pooper
-// If query = "unicorn pooper", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "unicorn pooper", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/unicorn-pooper.js" defer></script>`
 function easterEggUnicornPooper() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/unicorn-pooper/unicorn.js?");
 }
 YAHOO.util.Event.onDOMReady(easterEggUnicornPooper);
 
 
 // ## Occupy the Internet
-// If query = "occupy the internet", then embed this &lt;script&gt; tag after YUI has loaded:
+// If query = "occupy the internet", then embed these &lt;script&gt;'s after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/occupy-the-internet.js" defer></script>`
 function easterEggOccupyTheInternet() {
+  $getMinScript = document.createElement("script");
+  $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
+  document.getElementsByTagName('body')[0].appendChild($getMinScript);
   YAHOO.util.Get.script("http://occupyinter.net/embed.json?callback=_ee_occupy", {
     onSuccess: function() {
       window._ee_occupy = function(data) {
