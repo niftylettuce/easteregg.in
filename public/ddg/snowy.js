@@ -10,10 +10,7 @@ function easterEggSnowy() {
       $snowyStyle.type = 'text/css';
       $snowyStyle.media = 'screen';
       $snowFlurry.id = 'snow_flurry';
-      $snowFlurry.innerHTML = '<tt>snow flurry. &lt;3</tt>';
-      // Set background color to give more contrast to the pretty snowflakes
-      // (we can't just set the body's bg color because of #t padding-top: 0px)
-      document.getElementsByTagName('html')[0].style.backgroundColor = '#fdd204';
+      $snowFlurry.innerHTML = '&nbsp;';
       // Add the stylesheet to the &lt;head&gt; element
       $head.appendChild($snowyStyle);
       // Prepend the &lt;canvas&gt; snowflakes to the &lt;body&gt; element
@@ -33,3 +30,11 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 }
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
+// Keep the user clicking
+var $moreEggs = document.createElement('p');
+$moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
+  + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
+  + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
+  + ' target="_blank">eastereggin.com</a> yet?</p>';
+var $c2 = document.getElementById('c2');
+$c2.insertBefore($moreEggs, $c2.firstChild);
