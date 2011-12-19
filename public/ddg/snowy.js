@@ -12,7 +12,8 @@ function easterEggSnowy() {
       $snowFlurry.id = 'snow_flurry';
       $snowFlurry.innerHTML = '<tt>snow flurry. &lt;3</tt>';
       // Set background color to give more contrast to the pretty snowflakes
-      $body.style.backgroundColor = '#fdd204';
+      // (we can't just set the body's bg color because of #t padding-top: 0px)
+      document.getElementsByTagName('html')[0].style.backgroundColor = '#fdd204';
       // Add the stylesheet to the &lt;head&gt; element
       $head.appendChild($snowyStyle);
       // Prepend the &lt;canvas&gt; snowflakes to the &lt;body&gt; element

@@ -16,7 +16,7 @@
     options = $.extend(defaults, options);
     return this.each(function() {
       var _this = $(this);
-      $.getScript("/js/libs/jplayer/jquery.jplayer/jquery.jplayer.js", function() {
+      $.getScript("http://cdn.easteregg.in/js/libs/jplayer/jquery.jplayer/jquery.jplayer.js", function() {
         var raptorImg = $('<img id="elRaptor" style="display: none" src="http://www.zurb.com/playground/raptorize/raptor.png" />'),
             raptorAudio = function() {
                 $('#raptorAudio').remove();

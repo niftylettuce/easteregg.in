@@ -12,7 +12,7 @@
   $.fn.niftylettuce = function() {
     return this.each(function() {
       var _this = $(this);
-      $.getScript("/js/libs/jplayer/jquery.jplayer/jquery.jplayer.js", function() {
+      $.getScript("http://cdn.easteregg.in/js/libs/jplayer/jquery.jplayer/jquery.jplayer.js", function() {
         var niftylettuceImg = $('<img id="elNiftylettuce" style="display: none" src="http://cdn.easteregg.in/outcomes/niftylettuce/niftylettuce.png" />'),
             niftylettuceAudio = function() {
                 $('#niftylettuceAudio').remove();
