@@ -37,12 +37,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 // ## Snowy
@@ -61,9 +61,6 @@ function easterEggSnowy() {
       $snowyStyle.media = 'screen';
       $snowFlurry.id = 'snow_flurry';
       $snowFlurry.innerHTML = '<tt>snow flurry. &lt;3</tt>';
-      // Set background color to give more contrast to the pretty snowflakes
-      // (we can't just set the body's bg color because of #t padding-top: 0px)
-      document.getElementsByTagName('html')[0].style.backgroundColor = '#fdd204';
       // Add the stylesheet to the &lt;head&gt; element
       $head.appendChild($snowyStyle);
       // Prepend the &lt;canvas&gt; snowflakes to the &lt;body&gt; element
@@ -84,12 +81,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -121,12 +118,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -158,12 +155,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -193,12 +190,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -208,7 +205,11 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 function easterEggSecretMessage() {
   YAHOO.util.Get.script("http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/animation/animation-min.js", {
     onSuccess: function() {
-      Secret.fnMessage("yegg was here");
+      YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/secret-msg/secret.js", {
+        onSuccess: function() {
+          Secret.fnMessage("yegg was here");
+        }
+      });
     }
   });
 }
@@ -225,12 +226,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -247,18 +248,18 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
     YAHOO.util.Event.onDOMReady(easterEggAsteroids);
 } else {
   $getMinScript.onload = function() {
-    YAHOO.util.Event.onDOMReady(easterEggAsteroids);
+    YAHOO.util.Event.onDOMReady(easterEggAsteroids, {});
   };
 }
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -269,15 +270,17 @@ function easterEggSnake() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
     onSuccess: function() {
       $(function($){
-        $.getScript("http://cdn.easteregg.in/outcomes/snake/snake3.js", function() {
-          var snake = { width: 20, timeout: 100 }
-            , snakes = [];
-          // **TODO:** This can be **[customized][1]** into a complex snake game
-          // [2]: http://elliottkember.com/snake.html
-          snakes.push(new Snake({
-            width: snake.width,
-            timeout: snake.timeout
-          }));
+        $.getScript("http://cdn.easteregg.in/js/libs/jqueryui.js", function() {
+          $.getScript("http://cdn.easteregg.in/outcomes/snake/snake3.js", function() {
+            var snake = { width: 20, timeout: 100 }
+              , snakes = [];
+            // **TODO:** This can be **[customized][1]** into a complex snake game
+            // [2]: http://elliottkember.com/snake.html
+            snakes.push(new Snake({
+              width: snake.width,
+              timeout: snake.timeout
+            }));
+          });
         });
       });
       $.noConflict();
@@ -297,12 +300,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -334,12 +337,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -362,12 +365,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
@@ -397,12 +400,12 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
 // Keep the user clicking
-$moreEggs = document.createElement('p');
+var $moreEggs = document.createElement('p');
 $moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
   + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
   + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
   + ' target="_blank">eastereggin.com</a> yet?</p>';
-$c2 = document.getElementById('c2')
+var $c2 = document.getElementById('c2');
 $c2.insertBefore($moreEggs, $c2.firstChild);
 
 

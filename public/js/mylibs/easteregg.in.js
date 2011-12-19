@@ -297,18 +297,21 @@ var fatalities = {
         snake: {
           audio: "snake",
           // http://elliottkember.com/scripts/snake3.js
-          path: "http://cdn.easteregg.in/outcomes/snake/snake3.js",
+          // requires jqueryui
+          path: "http://cdn.easteregg.in/js/libs/jqueryui.js",
           fx: function() {
-            var snake = {
-                  width: 20,
-                  timeout: 100
-                }
-              , snakes = [];
-            /*globals Snake*/
-            snakes.push(new Snake({
-              width: snake.width,
-              timeout: snake.timeout
-            }));
+            $.getScript("http://cdn.easteregg.in/outcomes/snake/snake3.js", function() {
+              var snake = {
+                    width: 20,
+                    timeout: 100
+                  }
+                , snakes = [];
+              /*globals Snake*/
+              snakes.push(new Snake({
+                width: snake.width,
+                timeout: snake.timeout
+              }));
+            });
           }
         },
         // **niftylettuce
