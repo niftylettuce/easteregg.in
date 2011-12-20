@@ -15,7 +15,9 @@
 // &ast; = requires jQuery
 
 // ## Cornify
-// If query = "cornify", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"The Underground Cabal of Mirthful Protectors of the Corn"**
+// (from <http://paulirish.com/2009/cornify-easter-egg-with-jquery/>), then
+// embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/cornify.min.js" defer></script>`
 function easterEggCornify() {
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/cornify/cornify.js", {
@@ -48,7 +50,8 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Snowy
-// If query = "snowy", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"walking in a winter wonderland"** (from Dean Martin's song),
+// then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/snowy.min.js" defer></script>`
 function easterEggSnowy() {
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/snowy/snow.min.js", {
@@ -93,7 +96,7 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Invert Colors*
-// If query = "invert colors", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"duck duck invert"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/invert-colors.min.js" defer></script>`
 function easterEggInvertColors() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
@@ -130,7 +133,9 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Raptorize*
-// If query = "raptorize", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"unleash a raptor of jurassic proportions"**
+// from (<http://www.zurb.com/playground/jquery-raptorize>),
+// then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/raptorize.min.js" defer></script>`
 function easterEggRaptorize() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
@@ -167,7 +172,7 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Kathack*
-// If query = "kathack", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"play some katamari"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/kathack.min.js" defer></script>`
 function kathack() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
@@ -202,14 +207,14 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Secret Message
-// If query = "gabriel weinburg", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"tell me a secret"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/secret-message.min.js" defer></script>`
 function easterEggSecretMessage() {
   YAHOO.util.Get.script("http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/animation/animation-min.js", {
     onSuccess: function() {
       YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/secret-msg/secret.js", {
         onSuccess: function() {
-          Secret.fnMessage("yegg was here");
+          Secret.fnMessage("yegg ");
         }
       });
     }
@@ -238,7 +243,8 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Asteroids
-// If query = "asteroids", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"QuadraScan"** (from <http://en.wikipedia.org/wiki/QuadraScan>),
+// then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/asteroids.min.js" defer></script>`
 function easterEggAsteroids() {
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/asteroids/asteroids.min.js");
@@ -266,7 +272,7 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Snake*
-// If query = "snake", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"eat all the fruit"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/snake.min.js" defer></script>`
 function easterEggSnake() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
@@ -350,7 +356,7 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Nifty*
-// If query = "niftylettuce", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"nifty piece of lettuce"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/nifty.min.js" defer></script>`
 function easterEggNifty() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
@@ -387,7 +393,7 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Unicorn Pooper
-// If query = "unicorn pooper", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"unicorns plot rainbows"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/unicorn-pooper.min.js" defer></script>`
 function easterEggUnicornPooper() {
   YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/unicorn-pooper/unicorn.js?");
@@ -415,7 +421,7 @@ $c2.insertBefore($moreEggs, $c2.firstChild);
 
 
 // ## Occupy the Internet*
-// If query = "occupy the internet", then embed this &lt;script&gt; after YUI has loaded:
+// If query = **"the 99 percent of the internet"**, then embed this &lt;script&gt; after YUI has loaded:
 // `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/occupy-the-internet.min.js" defer></script>`
 function easterEggOccupyTheInternet() {
   YAHOO.util.Get.script("//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", {
