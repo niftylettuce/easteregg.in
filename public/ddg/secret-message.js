@@ -1,9 +1,12 @@
+// ## Secret Message
+// If query = **"tell me a secret"**, then embed this &lt;script&gt; after YUI has loaded:
+// `<script type="text/javascript" src="http://cdn.easteregg.in/ddg/secret-message.min.js" defer></script>`
 function easterEggSecretMessage() {
   YAHOO.util.Get.script("http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/animation/animation-min.js", {
     onSuccess: function() {
       YAHOO.util.Get.script("http://cdn.easteregg.in/outcomes/secret-msg/secret.js", {
         onSuccess: function() {
-          Secret.fnMessage("yegg was here");
+          Secret.fnMessage("yegg ");
         }
       });
     }
@@ -21,11 +24,3 @@ if($getMinScript.readyState === 'loaded' || $getMinScript.readyState === 'comple
 }
 $getMinScript.src = 'http://yui.yahooapis.com/2.9.0/build/get/get-min.js';
 document.getElementsByTagName("head")[0].appendChild($getMinScript);
-// Keep the user clicking
-var $moreEggs = document.createElement('p');
-$moreEggs.innerHTML = '<p style="text-align: center;">Have you searched for the '
-  + 'other "outcomes" of <img src="http://easteregg.in/img/favicon.png" '
-  + 'alt="eggs" style="display:inline;">\'s at <a href="http://easteregg.in" '
-  + ' target="_blank">eastereggin.com</a> yet?</p>';
-var $c2 = document.getElementById('c2');
-$c2.insertBefore($moreEggs, $c2.firstChild);
