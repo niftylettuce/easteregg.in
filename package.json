@@ -20,7 +20,7 @@
       , "gzippo"           : "0.1.0"
       , "walk"             : "2.0.2"
     }
-  , "main": "./server.js"
+  , "main": "./app.js"
   , "engines": { "node": ">= 0.6.3" }
   , "repository": {
         "type": "git"
