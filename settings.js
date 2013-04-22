@@ -5,6 +5,7 @@
 var express  = require('express')
   , port     = 3000
   , cacheAge = 24 * 60 * 60 * 1000
+  , path = require('path')
 
   // ## Common
   , fs       = require('fs')
@@ -96,7 +97,7 @@ exports.bootApplication = function(app, db) {
       debug: css.debug,
       compile: compiler
     }));
-    app.use(express.static(__dirname + '/public', { maxAge: cacheAge }));
+    app.use(express.static(path.join(__dirname + '/public'), { maxAge: cacheAge }));
     app.set('showStackError', true);
     if(logs.set) app.use(express.logger(logs.string));
   });
