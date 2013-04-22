@@ -6,6 +6,6 @@
     "port": 8081
   },
   "production": {
-    "port": 6789
+    "port": 8082
   }
 }

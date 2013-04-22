@@ -9,18 +9,18 @@
       , "eggs"
     ]
   , "dependencies": {
-        "express"          : ">= 2.4.6"
-      , "stylus"           : ">= 0.0.1"
-      , "nib"              : ">= 0.2.0"
-      , "jade"             : ">= 0.0.1"
-      , "colors"           : ">= 0.5.0"
-      , "gzippo"           : ">= 0.0.4"
-      , "commander"        : ">= 0.1.0"
-      , "underscore"       : ">= 1.1.7"
-      , "gzippo"           : ">= 0.1.0"
-      , "walk"             : ">= 2.0.2"
+        "express"          : "2.5.x"
+      , "stylus"           : "*"
+      , "nib"              : "0.2.0"
+      , "jade"             : "*"
+      , "colors"           : "0.5.0"
+      , "gzippo"           : "0.0.4"
+      , "commander"        : "*"
+      , "underscore"       : "1.1.7"
+      , "gzippo"           : "0.1.0"
+      , "walk"             : "2.0.2"
     }
-  , "main": "./server.js"
+  , "main": "./app.js"
   , "engines": { "node": ">= 0.6.3" }
   , "repository": {
         "type": "git"

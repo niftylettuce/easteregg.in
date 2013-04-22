@@ -17,7 +17,7 @@
     return this.each(function() {
       var _this = $(this);
       $.getScript("http://cdn.easteregg.in/js/libs/jplayer/jquery.jplayer/jquery.jplayer.js", function() {
-        var raptorImg = $('<img id="elRaptor" style="display: none" src="http://www.zurb.com/playground/raptorize/raptor.png" />'),
+        var raptorImg = $('<img id="elRaptor" style="display: none" src="http://www.zurb.com/playground/playground/raptorize/raptor.png" />'),
             raptorAudio = function() {
                 $('#raptorAudio').remove();
                 $('<div id="raptorAudio"></div>').jPlayer({
