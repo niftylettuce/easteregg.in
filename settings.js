@@ -92,8 +92,8 @@ exports.bootApplication = function(app, db) {
   //     Then point your browser to <http://localhost:8080/>.
   app.configure('development', function() {
     app.use(stylus.middleware({
-      src: __dirname + '/views',
-      dest: __dirname + '/public',
+      src: path.join(__dirname + '/views'),
+      dest: path.join(__dirname + '/public'),
       debug: css.debug,
       compile: compiler
     }));
@@ -118,8 +118,8 @@ exports.bootApplication = function(app, db) {
     compress = true;
     linenos = false;
     app.use(stylus.middleware({
-      src: __dirname + '/views',
-      dest: __dirname + '/public',
+      src: path.join(__dirname + '/views'),
+      dest: path.join(__dirname + '/public'),
       debug: css.debug,
       compile: compiler
     }));
@@ -132,7 +132,7 @@ exports.bootApplication = function(app, db) {
   });
 
   // ### Dynamic View Helpers
-  app.dynamicHelpers({
+  app.locals = {
       request: function(req) {
         return req;
       }
@@ -143,7 +143,7 @@ exports.bootApplication = function(app, db) {
     , cacheBusting: function() {
         return cacheBusting;
       }
-  });
+  }
 };
 
 // ## Error Configuration
