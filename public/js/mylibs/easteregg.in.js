@@ -1,4 +1,3 @@
-
 //     easteregg.in
 //     Copyright (c) 2011 Nick Baugh <niftylettuce@gmail.com>
 //     MIT Licensed
@@ -243,7 +242,7 @@ var fatalities = {
           audio: "invertcolors",
           path: "http://cdn.easteregg.in/outcomes/invert-colors/invert-colors.js",
           fx: function() {
-            $("body").invert();
+            $("html").invert();
           }
         },
         // **raptorize**
