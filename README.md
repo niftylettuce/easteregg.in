@@ -1,3 +1,4 @@
+[![Gittip](http://badgr.co/gittip/niftylettuce.png)](https://www.gittip.com/niftylettuce/)
 
 # easteregg.in
 
